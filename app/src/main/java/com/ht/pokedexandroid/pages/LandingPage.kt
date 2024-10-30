@@ -30,6 +30,29 @@ var pokemonList = listOf(
     Pokemon(name = "Pikachu", type = "Electric",color = Electric, image = R.drawable.examplepokenom),
     Pokemon(name = "Charmander", type = "Fire",color = Fire   , image = R.drawable.examplepokenom),
     Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
+    Pokemon(name = "Bulbasaur", type = "Grass",color = Grass, image = R.drawable.examplepokenom),
     Pokemon(name = "Jigglypuff", type = "Fairy",color = Fairy, image = R.drawable.examplepokenom)
 )
 
@@ -39,10 +62,11 @@ fun LandingPage() {
     Column(modifier = Modifier
         .padding(10.dp, 0.dp)
         .fillMaxSize()) {
-        Row() {
+        Row(horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier.fillMaxWidth().padding(0.dp,20.dp, 0.dp,10.dp)) {
             // Back + SearchBar
-            Image(painter = painterResource(id = R.drawable.left_arrow), contentDescription = "back")
-            Image(painter = painterResource(id = R.drawable.more), contentDescription = "menu")
+            Image(painter = painterResource(id = R.drawable.left_arrow), contentDescription = "back", modifier = Modifier.height(30.dp))
+            Image(painter = painterResource(id = R.drawable.more), contentDescription = "menu", modifier = Modifier.height(30.dp))
         }
         Text(
             text = "Pokedex",
